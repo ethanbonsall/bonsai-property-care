@@ -1,6 +1,4 @@
-# Personal Portfolio
-
-Welcome to my personal portfolio website — a showcase of my work, experience, and projects built with modern web technologies.
+# Bonsai Property Care
 
 ##  Tech Stack
 
@@ -10,14 +8,9 @@ Welcome to my personal portfolio website — a showcase of my work, experience, 
 - **Deployment**: Vercel
 - **Language**: TypeScript
 
-## Screenshots
-
-> Add some screenshots here if you’d like! 
-https://www.ethanbonsall.com/birthday
-
 ## Running Locally
 
-    git clone https://github.com/ethanbonsall/ethanbonsall-portfolio.git
+    git clone https://github.com/ethanbonsall/bonsai-property-care.git
 ```
 cd web
 ```
@@ -27,5 +20,4 @@ npm install
 ```
 npm run dev
 ```
-# Check it out live
-https://www.ethanbonsall.com/
+
