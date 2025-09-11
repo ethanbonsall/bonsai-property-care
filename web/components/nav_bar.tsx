@@ -3,22 +3,39 @@
 import Logo from "@/public/favicon.ico";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "@/context/themecontext";
 
 const services = ["Pressure Washing", "Driveway Sealing", "Landscaping"];
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [radius, setRadius] = useState(0);
+  const [padding, setPadding] = useState(0);
+  const toggleTheme = useContext(ThemeContext);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const maxScroll = 100;
+      const scrollY = window.scrollY;
+      const newRadius = Math.min((scrollY / maxScroll) * 36, 36);
+      const newPadding = Math.min((scrollY / maxScroll) * 16, 16);
+      setPadding(newPadding);
+      setRadius(newRadius);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-full text-text-700 z-40 shadow flex p-2 items-center justify-end">
+      <div className="fixed top-6 w-full h-0 text-text-700 z-40 flex md:hidden p-2 items-center justify-end ">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="flex items-center gap-2 text-text"
         >
-          <span className="text-base font-semibold">Menu</span>
-          <Menu className="w-6 h-6" />
+          <Menu className="w-12 h-12" />
         </button>
       </div>
       <div
@@ -57,11 +74,23 @@ const NavBar = () => {
           </nav>
         </div>
       </div>
-      <nav className="hidden md:flex flex-row sticky top-0 z-50 shadow w-full bg-primary text-text-50 px-6 py-4 justify-between items-center">
+      <nav
+        style={{
+          borderRadius: `${radius}px`,
+          marginTop: `${padding}px`,
+          marginLeft: `${padding}px`,
+          marginRight: `${padding}px`,
+          width: `calc(100% - ${padding * 2}px)`,
+        }}
+        className={`hidden md:flex flex-row fixed top-0 z-50 shadow 
+        bg-primary text-text-50 px-6 py-4 justify-between items-center
+        transition-[max-height,padding,transform]`}
+      >
         <img
           src={Logo.src}
           alt="Logo"
           className=" w-14 md:w-24 h-auto rounded-full"
+          onClick={() => toggleTheme.toggleTheme()}
         />
         <div className="flex gap-12 text-2xl font-semibold">
           <Link
@@ -86,7 +115,7 @@ const NavBar = () => {
             <div
               className="absolute top-full left-1/2 transform -translate-x-1/2 w-max
                bg-primary rounded text-text-50 
-               transition-all duration-500 ease-in-out
+               transition-[max-height,padding,transform] duration-1000 ease-in-out
                overflow-hidden max-h-0 py-2
                group-hover:max-h-[500px]"
             >
@@ -95,12 +124,12 @@ const NavBar = () => {
                   <Link
                     key={service}
                     className={` 
-            p-2  transition-all duration-500
+            p-2 transition-[max-height,padding,transform] duration-1000
             ease-[cubic-bezier(.73,.32,.34,1.5)]
             group-hover:opacity-100 group-hover:py-2
-            opacity-0 
             delay-[${i * 100}ms]
-             relative after:bg-accent after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 hover:after:w-full mx-4 after:transition-all after:duration-300 cursor-pointer
+             relative after:bg-accent after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 
+             hover:after:w-full mx-4 after:transition-all after:duration-300 cursor-pointer
           `}
                     href={`/services/${service
                       .toLowerCase()

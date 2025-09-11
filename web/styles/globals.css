@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 :root {
   --text-50: #f0f4f3;
   --text-100: #e2e9e7;
@@ -14,7 +19,7 @@
   --text-800: #2c3a36;
   --text-900: #161d1b;
   --text-950: #0b0f0e;
-  
+
   --background-50: #f0f4f3;
   --background-100: #e2e9e6;
   --background-200: #c5d3cd;
@@ -26,7 +31,7 @@
   --background-800: #2c3a34;
   --background-900: #161d1a;
   --background-950: #0b0f0d;
-  
+
   --primary-50: #f0f4f3;
   --primary-100: #e2e9e7;
   --primary-200: #c5d3ce;
@@ -38,7 +43,7 @@
   --primary-800: #2c3a35;
   --primary-900: #161d1b;
   --primary-950: #0b0f0d;
-  
+
   --secondary-50: #f0f2f4;
   --secondary-100: #e2e5e9;
   --secondary-200: #c5cbd3;
@@ -50,7 +55,7 @@
   --secondary-800: #2c323a;
   --secondary-900: #16191d;
   --secondary-950: #0b0c0f;
-  
+
   --accent-50: #f0f1f4;
   --accent-100: #e2e3e9;
   --accent-200: #c5c7d3;
@@ -64,11 +69,10 @@
   --accent-950: #0b0c0f;
 
   --text: #161d1b;
-    --background: #ebf0ee;
-    --primary: #40544d;
-    --secondary: #9ca6b4;
-    --accent: #636983;
-  
+  --background: #ebf0ee;
+  --primary: #40544d;
+  --secondary: #9ca6b4;
+  --accent: #636983;
 }
 .dark {
   --text-50: #0b0f0e;
@@ -82,7 +86,7 @@
   --text-800: #c5d3cf;
   --text-900: #e2e9e7;
   --text-950: #f0f4f3;
-  
+
   --background-50: #0b0f0d;
   --background-100: #161d1a;
   --background-200: #2c3a34;
@@ -94,7 +98,7 @@
   --background-800: #c5d3cd;
   --background-900: #e2e9e6;
   --background-950: #f0f4f3;
-  
+
   --primary-50: #0b0f0d;
   --primary-100: #161d1b;
   --primary-200: #2c3a35;
@@ -106,7 +110,7 @@
   --primary-800: #c5d3ce;
   --primary-900: #e2e9e7;
   --primary-950: #f0f4f3;
-  
+
   --secondary-50: #0b0c0f;
   --secondary-100: #16191d;
   --secondary-200: #2c323a;
@@ -118,7 +122,7 @@
   --secondary-800: #c5cbd3;
   --secondary-900: #e2e5e9;
   --secondary-950: #f0f2f4;
-  
+
   --accent-50: #0b0c0f;
   --accent-100: #16171d;
   --accent-200: #2c2e3a;
@@ -132,11 +136,10 @@
   --accent-950: #f0f1f4;
 
   --text: #e2e9e7;
-    --background: #0f1412;
-    --primary: #abbfb8;
-    --secondary: #4b5563;
-    --accent: #7c829c;
-  
+  --background: #0f1412;
+  --primary: #abbfb8;
+  --secondary: #4b5563;
+  --accent: #7c829c;
 }
 
 .image-hover {
@@ -200,7 +203,6 @@ html {
 .animate-slide-up {
   animation: slide-up 1s ease-out forwards;
 }
-
 
 @media (min-width: 768px) {
   .custom-scrollbar::-webkit-scrollbar {

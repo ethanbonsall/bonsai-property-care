@@ -1,12 +1,11 @@
+import Hero from "@/components/hero";
 import NavBar from "@/components/nav_bar";
 
 const Portfolio = () => {
   return (
-    <div className="bg-background flex flex-col items-center font-roboto min-h-screen">
+    <div className="bg-background flex flex-col items-center text-text font-roboto">
       <NavBar />
-      <div className="flex flex-grow items-center justify-center w-full bg-background text-text text-center text-3xl">
-        Test
-      </div>
+      <Hero />
     </div>
   );
 };
