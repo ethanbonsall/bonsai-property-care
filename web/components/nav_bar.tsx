@@ -33,7 +33,7 @@ const NavBar = () => {
       <div className="fixed top-6 w-full h-0 text-text-700 z-40 flex md:hidden p-2 items-center justify-end ">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="flex items-center gap-2 text-text"
+          className="flex items-center gap-2 text-white"
         >
           <Menu className="w-12 h-12" />
         </button>
