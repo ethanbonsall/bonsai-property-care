@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col h-[110dvh] w-full">
+    <div className="flex flex-col min-h-screen md:h-[110dvh] w-full">
       <img
-        className=" object-cover h-[110dvh] w-full"
+        className=" object-cover min-h-screen md:h-[110dvh] w-full"
         src={generic.src}
         alt="Generic"
       />
