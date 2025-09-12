@@ -10,14 +10,14 @@ const Hero = () => {
         src={generic.src}
         alt="Generic"
       />
-      <p className="text-white font-bold text-4xl md:text-6xl absolute top-[45dvh] self-center left-[10dvw] md:left-[15dvw]">
+      <p className="text-white font-bold text-4xl md:text-5xl lg:text-6xl absolute top-[45dvh] md:top-[44dvh] lg:top-[45dvh] self-center left-[10dvw] md:left-[15dvw]">
         Brighten your home,
       </p>
-      <p className=" text-white font-bold text-4xl md:text-6xl absolute top-[53dvh] self-center left-[10dvw] md:left-[15dvw]">
+      <p className=" text-white font-bold text-4xl md:text-5xl lg:text-6xl absolute top-[53dvh] md:top-[55dvh] lg:top-[53dvh] self-center left-[10dvw] md:left-[15dvw]">
         Simplify your life.
       </p>
       <a
-        className="flex flex-row p-2 bg-primary absolute text-text-50 top-[62dvh] font-bold left-[10dvw] md:left-[15dvw] text-xl"
+        className="flex flex-row p-2 bg-primary absolute text-text-50 top-[62dvh] md:top-[68dvh] lg:top-[62dvh] font-bold left-[10dvw] md:left-[15dvw] text-xl"
         href="/services"
       >
         Schedule Now <ChevronRight className="h-7 w-auto" />
