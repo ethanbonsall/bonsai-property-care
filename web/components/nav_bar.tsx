@@ -2,7 +2,7 @@
 "use client";
 import Logo from "@/public/favicon.ico";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "@/context/themecontext";
 
@@ -10,6 +10,7 @@ const services = ["Pressure Washing", "Driveway Sealing", "Landscaping"];
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [radius, setRadius] = useState(0);
   const [padding, setPadding] = useState(0);
   const toggleTheme = useContext(ThemeContext);
@@ -51,26 +52,45 @@ const NavBar = () => {
         </button>
         <div className="self-center justify-center">
           <nav className="flex flex-col gap-6 text-5xl md:text-4xl 2xl:text-6xl font-bold">
-            <hr className="border-secondary border-t-2" />
+            <hr className="border-primary border-t-2" />
             <Link href="/" onClick={() => setMenuOpen(!menuOpen)}>
               Home
             </Link>
             <Link href="/about" onClick={() => setMenuOpen(!menuOpen)}>
               About
             </Link>
-            <Link href="/experience" onClick={() => setMenuOpen(!menuOpen)}>
-              Experience
-            </Link>
-            <Link href="/portfolio" onClick={() => setMenuOpen(!menuOpen)}>
-              Portfolio
-            </Link>
-            <Link href="/blog" onClick={() => setMenuOpen(!menuOpen)}>
-              Blog
-            </Link>
             <Link href="/contact" onClick={() => setMenuOpen(!menuOpen)}>
               Contact
             </Link>
-            <hr className="border-secondary border-t-2" />
+            <a
+              className="flex flex-row items-center cursor-pointer"
+              onClick={() => setServicesOpen(!servicesOpen)}
+            >
+              Services{" "}
+              <ChevronDown
+                className={`w-6 h-6 ml-2 transition-transform duration-300 ${
+                  servicesOpen ? "rotate-180" : "rotate-0"
+                }`}
+              />
+            </a>
+
+            <div
+              className={`overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out ${
+                servicesOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              {services.map((service) => (
+                <Link
+                  key={service}
+                  className="block text-xl p-1"
+                  href={`/services/${service.toLowerCase().replace(/ /g, "-")}`}
+                >
+                  {service}
+                </Link>
+              ))}
+            </div>
+
+            <hr className="border-primary border-t-2" />
           </nav>
         </div>
       </div>
@@ -92,7 +112,7 @@ const NavBar = () => {
           className=" w-14 md:w-24 h-auto rounded-full"
           onClick={() => toggleTheme.toggleTheme()}
         />
-        <div className="flex gap-12 text-2xl font-semibold">
+        <div className="flex gap-12 text-3xl font-semibold">
           <Link
             className="group text-text-50 transition duration-300"
             href={"/"}
@@ -109,7 +129,9 @@ const NavBar = () => {
           </Link>
           <div className="group relative inline-block ">
             <div className="group text-text-50 transition duration-300">
-              <p className="cursor-pointer rounded">Services</p>
+              <a className="cursor-pointer rounded" href="/services">
+                Services
+              </a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent"></span>
             </div>
             <div
@@ -117,7 +139,7 @@ const NavBar = () => {
                bg-primary rounded text-text-50 
                transition-[max-height,padding,transform] duration-1000 ease-in-out
                overflow-hidden max-h-0 py-2
-               group-hover:max-h-[500px]"
+               group-hover:max-h-[500px] text-2xl"
             >
               <div className="flex flex-col">
                 {services.map((service, i) => (

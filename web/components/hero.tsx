@@ -17,10 +17,10 @@ const Hero = () => {
         Simplify your life.
       </p>
       <a
-        className="flex flex-row p-2 bg-primary absolute text-text-50 top-[62dvh] md:top-[68dvh] lg:top-[62dvh] font-bold left-[10dvw] md:left-[15dvw] text-xl"
+        className="flex flex-row p-2 md:p-3 bg-primary absolute text-text-50 top-[62dvh] md:top-[68dvh] lg:top-[62dvh] font-bold left-[10dvw] md:left-[15dvw] text-xl lg:text-2xl rounded-[4px]"
         href="/services"
       >
-        Schedule Now <ChevronRight className="h-7 w-auto" />
+        Schedule Now <ChevronRight className="h-7 lg:h-9 w-auto" />
       </a>
     </div>
   );
