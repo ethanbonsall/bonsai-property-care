@@ -129,9 +129,9 @@ const NavBar = () => {
           </Link>
           <div className="group relative inline-block ">
             <div className="group text-text-50 transition duration-300">
-              <a className="cursor-pointer rounded" href="/services">
+              <Link className="cursor-pointer rounded" href="/services">
                 Services
-              </a>
+              </Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent"></span>
             </div>
             <div
