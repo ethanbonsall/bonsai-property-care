@@ -109,10 +109,10 @@ const NavBar = () => {
         <img
           src={Logo.src}
           alt="Logo"
-          className=" w-14 md:w-24 h-auto rounded-full"
+          className=" w-14 md:w-24 2xl:w-40 h-auto rounded-full"
           onClick={() => toggleTheme.toggleTheme()}
         />
-        <div className="flex gap-12 text-3xl font-semibold">
+        <div className="flex gap-12 text-3xl 2xl:text-6xl font-semibold">
           <Link
             className="group text-text-50 transition duration-300"
             href={"/"}
