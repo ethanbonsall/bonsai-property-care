@@ -46,12 +46,12 @@ const NavBar = () => {
       >
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="absolute top-6 right-6 z-50"
+          className="absolute top-6 right-8 z-50"
         >
           <X className="w-8 h-8 2xl:w-10 2xl:h-10" />
         </button>
         <div className="self-center justify-center">
-          <nav className="flex flex-col gap-6 text-5xl md:text-4xl 2xl:text-6xl font-bold">
+          <nav className="flex flex-col gap-6 justify-center text-5xl md:text-4xl 2xl:text-6xl font-bold min-h-screen">
             <hr className="border-primary border-t-2" />
             <Link href="/" onClick={() => setMenuOpen(!menuOpen)}>
               Home

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
