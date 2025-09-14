@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <div className="bg-background flex flex-col items-center text-text font-roboto">
       <Head>
-        <title>Bonsai property Care</title>
+        <title>Bonsai Property Care</title>
         <meta
           name="description"
           content="Property care from landscaping to siding to power washing to driveway sealing"
