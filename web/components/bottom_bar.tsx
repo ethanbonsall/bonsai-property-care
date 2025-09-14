@@ -98,7 +98,7 @@ const BottomBar = () => {
           <div className="flex flex-row my-2">
             <Mail className="h-8 w-auto" />
             <Link
-              className="ml-2 w-fitrelative after:bg-accent after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 
+              className="ml-2 w-fit relative after:bg-accent after:absolute after:h-[2px] after:w-0 after:bottom-1 after:left-0 
              hover:after:w-full after:transition-all after:duration-300"
               href="mailto:bonsallc7.caleb@gmail.com"
             >
