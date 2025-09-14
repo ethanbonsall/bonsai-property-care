@@ -5,10 +5,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col min-h-screen md:h-[110dvh] w-full bg-cover bg-top md:bg-center bg-[url('/assets/generic.jpeg')] ">
       <div className="flex flex-col mx-auto md:mx-[15%] md:my-[5%] gap-y-2 justify-center align-middle min-h-screen md:h-[110dvh]">
-        <p
-          className="text-white font-bold text-[42px] md:text-5xl lg:text-6xl"
-          style={{ fontSize: 44 }}
-        >
+        <p className="text-white font-bold text-[42px] md:text-5xl lg:text-6xl">
           Brighten your home
         </p>
         <p className="text-white font-bold text-[42px] md:text-5xl lg:text-6xl">
