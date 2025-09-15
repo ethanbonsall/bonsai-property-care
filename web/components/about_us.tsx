@@ -29,7 +29,7 @@ const About = () => {
             services. From landscaping and siding to power washing and driveway
             sealing, we provide top-notch care tailored to your needs.
           </p>
-          <div className="text-xl xl:text-2xl 2xl:text-5xl font-medium">
+          <div className="text-xl xl:text-2xl 2xl:text-5xl mx-4 font-medium">
             <li>Experience</li>
             <li>Dedication</li>
             <li>Customer Satisfaction</li>
