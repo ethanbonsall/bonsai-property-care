@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import NavBar from "@/components/nav_bar";
 import Head from "next/head";
 import BottomBar from "@/components/bottom_bar";
+import About from "@/components/about_us";
 
 const Portfolio = () => {
   return (
@@ -15,6 +16,7 @@ const Portfolio = () => {
       </Head>
       <NavBar />
       <Hero />
+      <About />
       <BottomBar />
     </div>
   );
