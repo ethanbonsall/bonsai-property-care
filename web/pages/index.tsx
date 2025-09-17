@@ -3,6 +3,7 @@ import NavBar from "@/components/nav_bar";
 import Head from "next/head";
 import BottomBar from "@/components/bottom_bar";
 import About from "@/components/about_us";
+import Services from "@/components/services";
 
 const Portfolio = () => {
   return (
@@ -17,6 +18,7 @@ const Portfolio = () => {
       <NavBar />
       <Hero />
       <About />
+      <Services />
       <BottomBar />
     </div>
   );
