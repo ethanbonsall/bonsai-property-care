@@ -24,7 +24,7 @@ const Services = () => {
     return () => observer.disconnect();
   }, [ref]);
   return (
-    <div className="flex flex-col bg-secondary text-text h-fit w-full translate-all ">
+    <div className="flex flex-col bg-secondary text-text h-fit w-full translate-all my-[1%]">
       <div
         className={`flex flex-col h-fit transition-all duration-700 mx-[5%] my-[2%] ${
           isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-4"
