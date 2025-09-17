@@ -48,7 +48,7 @@ const Services = () => {
         </p>
       </div>
       <div
-        className={`flex flex-col h-fit items-center mx-8 lg:mx-0 my-[2%] justify-items-center justify-around transition-all duration-700 ${
+        className={`flex flex-col h-fit items-center mx-8 lg:mx-0 my-[2%] justify-items-center lg:justify-around transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-8"
         }`}
         ref={ref}
@@ -69,7 +69,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px] aspect-video">
                 <img
@@ -102,7 +102,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px] aspect-video">
                 <img
