@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row bg-background justify-evenly lg:justify-between text-text min-h-screen w-full"
+      className="flex flex-col lg:flex-row bg-background justify-evenly pt-[4%] lg:justify-between text-text min-h-screen w-full"
       ref={ref}
     >
       <div className="flex flex-row items-center justify-center w-full lg:w-2/5 lg:justify-normal lg:ml-[2%] gap-x-4 2xl:gap-x-16 ">
@@ -54,14 +54,14 @@ const About = () => {
       </div>
       <div className="flex flex-col justify-center mx-[2%] 2xl:gap-y-8">
         <p
-          className={`text-bold text-6xl xl:text-[80px] 2xl:text-[150px] transition-all duration-700 ease-out ${
+          className={`font-bold text-6xl xl:text-[80px] 2xl:text-[150px] transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         >
           About Us
         </p>
         <p
-          className={`text-xl xl:text-2xl 2xl:text-5xl my-4 max-w-2xl 2xl:max-w-4xl transition-all duration-700 ease-out ${
+          className={`text-xl xl:text-2xl 2xl:text-4xl my-4 max-w-2xl 2xl:max-w-4xl transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         >
