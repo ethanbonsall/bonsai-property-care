@@ -33,21 +33,21 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row bg-background justify-evenly md:justify-between text-text min-h-screen w-full"
+      className="flex flex-col lg:flex-row bg-background justify-evenly lg:justify-between text-text min-h-screen w-full"
       ref={ref}
     >
-      <div className="flex flex-row items-center justify-center w-full md:w-2/5 md:justify-normal lg:ml-[2%] gap-x-4 2xl:gap-x-16 ">
+      <div className="flex flex-row items-center justify-center w-full lg:w-2/5 lg:justify-normal lg:ml-[2%] gap-x-4 2xl:gap-x-16 ">
         <img
           src={Caleb.src}
           alt="Caleb"
-          className={`object-cover w-1/3 md:w-1/2 rounded-[10px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out ${
+          className={`object-cover w-1/3 lg:w-1/2 rounded-[10px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         />
         <img
           src={Work.src}
           alt="Work"
-          className={`object-cover w-1/3 md:w-1/2 rounded-[10px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out ${
+          className={`object-cover w-1/3 lg:w-1/2 rounded-[10px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         />
@@ -81,7 +81,7 @@ const About = () => {
           <li>Quality Workmanship</li>
         </div>
         <button
-          className={`flex flex-row self-end bg-secondary-800 rounded-[12px] text-text-50 mt-8 2xl:mt-24 px-6 py-3 text-xl xl:text-2xl 2xl:text-5xl font-semibold w-fit hover:bg-secondary-700 mb-8 md:mb-0 transition-all duration-700 ease-out ${
+          className={`flex flex-row self-end bg-secondary-800 rounded-[12px] text-text-50 mt-8 2xl:mt-24 px-6 py-3 text-xl xl:text-2xl 2xl:text-5xl font-semibold w-fit hover:bg-secondary-700 mb-8 lg:mb-0 transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
           onClick={() => (window.location.href = "/about")}

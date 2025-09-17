@@ -4,6 +4,8 @@ import Head from "next/head";
 import BottomBar from "@/components/bottom_bar";
 import About from "@/components/about_us";
 import Services from "@/components/services";
+import Method from "@/components/method";
+import Testimonial from "@/components/testimonials";
 
 const Portfolio = () => {
   return (
@@ -19,6 +21,8 @@ const Portfolio = () => {
       <Hero />
       <About />
       <Services />
+      <Method />
+      <Testimonial />
       <BottomBar />
     </div>
   );
