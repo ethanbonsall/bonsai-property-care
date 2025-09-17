@@ -69,7 +69,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:max-w-1/2 mx-auto lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px] aspect-video">
                 <img
@@ -77,7 +77,7 @@ const Services = () => {
                   alt={service.label}
                   className="object-cover rounded-t-[35px] aspect-video"
                 />
-                <div className="flex items-center justify-center text-background py-[2%]">
+                <div className="flex items-center justify-center text-background bg-accent py-[2%] rounded-b-[35px]">
                   <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center">
                     {service.label}
                   </p>
@@ -102,16 +102,16 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:max-w-1/2 mx-auto lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px] aspect-video">
                 <img
                   src={service.img}
                   alt={service.label}
-                  className="object-cover rounded-t-[35px] "
+                  className="object-cover rounded-t-[35px] aspect-video"
                 />
-                <div className="flex items-center justify-center text-background py-[2%]">
-                  <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center w-full">
+                <div className="flex items-center justify-center text-background bg-accent py-[2%] rounded-b-[35px]">
+                  <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center">
                     {service.label}
                   </p>
                 </div>
