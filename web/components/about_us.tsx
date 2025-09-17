@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row bg-background text-text  md:h-screen w-full"
+      className="flex flex-col md:flex-row bg-background justify-between text-text h-screen w-full"
       ref={ref}
     >
       <div className="flex flex-row items-center justify-center md:justify-normal mt-8 mb-8 md:mb-0 md:mt-0 md:ml-8 gap-x-4 2xl:gap-x-16 ">

@@ -24,20 +24,20 @@ const Services = () => {
     return () => observer.disconnect();
   }, [ref]);
   return (
-    <div className="flex flex-col bg-secondary text-text min-h-screen lg:h-screen w-full translate-all ">
+    <div className="flex flex-col bg-secondary text-text h-fit w-full translate-all ">
       <div
-        className={`flex flex-col md:h-fit transition-all duration-700 mx-[5%] mt-[2%] ${
+        className={`flex flex-col h-fit transition-all duration-700 mx-[5%] my-[2%] ${
           isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-4"
         }`}
         ref={ref}
       >
-        <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-primary-800">
+        <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-medium text-primary-800">
           Our Services
         </p>
-        <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-6xl font-semibold mt-[0.5%]">
+        <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-[80px] font-semibold mt-[0.5%] 2xl:mt-[1%]">
           Cleanliness & Brilliance for Your Home
         </p>
-        <p className="hidden md:block text-md md:text-lg xl:text-xl 2xl:text-2xl mt-[1%]">
+        <p className="hidden md:block text-md md:text-lg xl:text-xl 2xl:text-4xl mt-[1%] 2xl:mt-[2%]">
           From expert pressure washing that restores brilliance to your home’s
           exterior, to premium driveway sealing that protects and enhances curb
           appeal, to lush landscaping designs that bring elegance to every
@@ -48,77 +48,77 @@ const Services = () => {
         </p>
       </div>
       <div
-        className={`grid grid-cols-1 grid-rows-4  mb-24 lg:mb-0 lg:grid-rows-2 lg:grid-cols-2 min-h-0 max-h-none max-w-full lg:h-2/3 mt-[4%] lg:mt-[2%] items-center mx-4 lg:mx-0 gap-y-24 md:gap-8 justify-items-center justify-center transition-all duration-700 ${
+        className={`flex flex-col h-fit items-center mx-8 lg:mx-0 my-[2%] justify-items-center justify-around transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-8"
         }`}
         ref={ref}
       >
-        <Link
-          href="/services/pressure-washing"
-          className="h-full aspect-video transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] "
-        >
-          <div className="flex flex-col md:flex-row justify-center w-full">
-            <img
-              src={pressure.src}
-              alt="Pressure washing"
-              className="w-full object-cover rounded-t-[35px] md:rounded-l-[35px] md:rounded-tr-none aspect-video"
-            />
-            <div className="flex items-center bg-accent text-background  md:px-[7%] rounded-b-[35px] md:rounded-r-[35px] md:rounded-bl-none ">
-              <p className="bg-accent text-3xl rounded-b-[35px]">
-                Power Washing
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link
-          href="/services/driveway-sealing"
-          className="h-full aspect-video transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)]"
-        >
-          <div className="flex flex-col md:flex-row justify-center ">
-            <img
-              src={driveway.src}
-              alt="Driveway sealing"
-              className="w-full object-cover rounded-t-[35px] md:rounded-l-[35px] md:rounded-tr-none aspect-video"
-            />
-            <div className="flex items-center md:px-4 bg-accent text-background rounded-b-[35px] md:rounded-r-[35px] md:rounded-bl-none">
-              <p className="bg-accent text-3xl rounded-b-[35px]">
-                Driveway Sealing
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link
-          href="/services/landscaping"
-          className="h-full aspect-video transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)]"
-        >
-          <div className="flex flex-col md:flex-row justify-center w-fit ">
-            <img
-              src={landscape.src}
-              alt="Landscape"
-              className="w-full object-cover rounded-t-[35px] md:rounded-l-[35px] md:rounded-tr-none aspect-video"
-            />
-            <div className="flex items-center md:px-4 bg-accent text-background  rounded-b-[35px] md:rounded-r-[35px] md:rounded-bl-none">
-              <p className="bg-accent text-3xl  rounded-b-[35px]">
-                Landscaping
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link
-          href="/services/general-home-care"
-          className="h-full aspect-video transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)]"
-        >
-          <div className="flex flex-col md:flex-row justify-center  ">
-            <img
-              src={general.src}
-              alt="Home Care"
-              className="w-full object-cover rounded-t-[35px] md:rounded-l-[35px] md:rounded-tr-none aspect-video"
-            />
-            <div className="flex items-center bg-accent text-background md:px-[6%] rounded-b-[35px] md:rounded-r-[35px] md:rounded-bl-none">
-              <p className="bg-accent  text-3xl  rounded-b-[35px]">Home Care</p>
-            </div>
-          </div>
-        </Link>
+        <div className="flex flex-col gap-y-[1%] lg:gap-y-0 lg:flex-row ">
+          {[
+            {
+              href: "/services/pressure-washing",
+              label: "Power Washing",
+              img: pressure.src,
+            },
+            {
+              href: "/services/driveway-sealing",
+              label: "Driveway Sealing",
+              img: driveway.src,
+            },
+          ].map((service) => (
+            <Link
+              key={service.href}
+              href={service.href}
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+            >
+              <div className="flex flex-col w-full rounded-[35px] aspect-video">
+                <img
+                  src={service.img}
+                  alt={service.label}
+                  className="object-cover rounded-t-[35px] aspect-video"
+                />
+                <div className="flex items-center justify-center text-background py-[2%]">
+                  <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center">
+                    {service.label}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="flex flex-col gap-y-[1%] lg:gap-y-0 lg:flex-row">
+          {[
+            {
+              href: "/services/landscaping",
+              label: "Landscaping",
+              img: landscape.src,
+            },
+            {
+              href: "/services/general-home-care",
+              label: "Home Care",
+              img: general.src,
+            },
+          ].map((service) => (
+            <Link
+              key={service.href}
+              href={service.href}
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+            >
+              <div className="flex flex-col w-full rounded-[35px] aspect-video">
+                <img
+                  src={service.img}
+                  alt={service.label}
+                  className="object-cover rounded-t-[35px] "
+                />
+                <div className="flex items-center justify-center text-background py-[2%]">
+                  <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center w-full">
+                    {service.label}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
