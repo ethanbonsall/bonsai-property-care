@@ -69,7 +69,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 max-w-full lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px] aspect-video">
                 <img
@@ -102,7 +102,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 max-w-full lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px] aspect-video">
                 <img
