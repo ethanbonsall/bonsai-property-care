@@ -26,7 +26,7 @@ const Services = () => {
   return (
     <div className="flex flex-col bg-secondary text-text h-fit w-full translate-all my-[1%]">
       <div
-        className={`flex flex-col h-fit transition-all duration-700 mx-[5%] my-[2%] ${
+        className={`flex flex-col h-fit transition-all duration-700 mx-[5%] mt-[2%] mb-[1%] ${
           isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-4"
         }`}
         ref={ref}
@@ -48,12 +48,12 @@ const Services = () => {
         </p>
       </div>
       <div
-        className={`flex flex-col h-fit items-center mx-8 lg:mx-0 my-[2%] justify-items-center lg:justify-around transition-all duration-700 ${
+        className={`flex flex-col h-fit items-center mx-8 lg:mx-0 mb-[1%] justify-items-center lg:justify-around transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-8"
         }`}
         ref={ref}
       >
-        <div className="flex flex-col gap-y-[1%] lg:gap-y-0 lg:flex-row ">
+        <div className="flex flex-col justify-normal xl:justify-evenly gap-y-[1%] lg:gap-y-0 lg:flex-row ">
           {[
             {
               href: "/services/pressure-washing",
@@ -69,16 +69,16 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 max-w-full lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="transition-all duration-300 hover:scale-105 max-w-full lg:max-w-[1/2] xl:w-2/5 2xl:w-1/3 mx-2 lg:mx-[5%] my-[2%] xl:my-[1%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
-              <div className="flex flex-col w-full rounded-[35px] aspect-video">
+              <div className="flex flex-col w-full rounded-[35px]">
                 <img
                   src={service.img}
                   alt={service.label}
                   className="object-cover rounded-t-[35px] aspect-video"
                 />
                 <div className="flex items-center justify-center text-background bg-accent py-[2%] rounded-b-[35px]">
-                  <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center">
+                  <p className="text-2xl md:text-3xl xl:text-4xl font-semibold text-center">
                     {service.label}
                   </p>
                 </div>
@@ -86,7 +86,7 @@ const Services = () => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-col gap-y-[1%] lg:gap-y-0 lg:flex-row">
+        <div className="flex flex-col justify-normal xl:justify-evenly gap-y-[1%] lg:gap-y-0 lg:flex-row">
           {[
             {
               href: "/services/landscaping",
@@ -102,16 +102,16 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="aspect-video transition-all duration-300 hover:scale-105 min-w-1/2 max-w-full lg:w-1/2 mx-2 lg:mx-[5%] my-[2%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="transition-all duration-300 hover:scale-105 max-w-full lg:max-w-[1/2] xl:w-2/5 2xl:w-1/3 mx-2 lg:mx-[5%] my-[2%] xl:my-[1%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
-              <div className="flex flex-col w-full rounded-[35px] aspect-video">
+              <div className="flex flex-col w-full rounded-[35px]">
                 <img
                   src={service.img}
                   alt={service.label}
                   className="object-cover rounded-t-[35px] aspect-video"
                 />
                 <div className="flex items-center justify-center text-background bg-accent py-[2%] rounded-b-[35px]">
-                  <p className="text-2xl md:text-3xl xl:text-5xl 2xl:text-[80px] font-semibold text-center">
+                  <p className="text-2xl md:text-3xl xl:text-4xl font-semibold text-center">
                     {service.label}
                   </p>
                 </div>

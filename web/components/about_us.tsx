@@ -36,7 +36,7 @@ const About = () => {
       className="flex flex-col md:flex-row bg-background justify-evenly md:justify-between text-text min-h-screen w-full"
       ref={ref}
     >
-      <div className="flex flex-row items-center justify-center w-full md:w-2/5 md:justify-normal ml-[2%] gap-x-4 2xl:gap-x-16 ">
+      <div className="flex flex-row items-center justify-center w-full md:w-2/5 md:justify-normal lg:ml-[2%] gap-x-4 2xl:gap-x-16 ">
         <img
           src={Caleb.src}
           alt="Caleb"
