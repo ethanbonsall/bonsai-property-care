@@ -18,7 +18,7 @@ const Services = () => {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
     observer.observe(ref.current);
     return () => observer.disconnect();
