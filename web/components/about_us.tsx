@@ -33,21 +33,21 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row bg-background justify-evenly pt-[4%] lg:justify-between text-text min-h-screen w-full"
+      className="flex flex-col lg:flex-row bg-gradient-to-b md:bg-gradient-to-r from-accent to-background justify-evenly lg:justify-between text-text min-h-screen w-full"
       ref={ref}
     >
-      <div className="flex flex-row items-center justify-center w-full lg:w-2/5 lg:justify-normal lg:ml-[2%] gap-x-4 2xl:gap-x-16 ">
+      <div className="flex flex-row items-center justify-center w-full lg:w-2/5 py-[4%] gap-x-4 2xl:gap-x-16">
         <img
           src={Caleb.src}
           alt="Caleb"
-          className={`object-cover w-1/3 lg:w-1/2 rounded-[10px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out ${
+          className={`object-cover w-1/3 lg:w-5/12 rounded-l-[50px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out aspect-[9/16] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         />
         <img
           src={Work.src}
           alt="Work"
-          className={`object-cover w-1/3 lg:w-1/2 rounded-[10px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out ${
+          className={`object-cover w-1/3 lg:w-5/12 rounded-r-[50px] 2xl:rounded-[20px] shadow-2xl transition-all duration-700 ease-out aspect-[9/16] lg:mt-6 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         />

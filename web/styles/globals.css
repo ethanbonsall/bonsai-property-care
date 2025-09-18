@@ -7,6 +7,18 @@ body {
   overscroll-behavior: none;
 }
 
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
 :root {
   --text-50: #f0f4f3;
   --text-100: #e2e9e7;
