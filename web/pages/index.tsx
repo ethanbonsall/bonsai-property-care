@@ -6,10 +6,11 @@ import About from "@/components/about_us";
 import Services from "@/components/services";
 import Method from "@/components/method";
 import Testimonial from "@/components/testimonials";
+import Quote from "@/components/quote";
 
 const Portfolio = () => {
   return (
-    <div className="bg-background flex flex-col items-center text-text font-roboto">
+    <div className="bg-background flex flex-col items-center text-text font-roboto gap-y-2">
       <Head>
         <title>Bonsai Property Care</title>
         <meta
@@ -23,6 +24,7 @@ const Portfolio = () => {
       <Services />
       <Method />
       <Testimonial />
+      <Quote />
       <BottomBar />
     </div>
   );

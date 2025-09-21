@@ -25,7 +25,7 @@ const Method = () => {
   }, [ref]);
 
   return (
-    <div className="flex flex-col bg-background justify-evenly text-text h-fit w-full">
+    <div className="flex flex-col bg-gradient-to-t from-secondary to-primary justify-evenly text-background h-fit w-full">
       <div className="flex flex-col items-center gap-y-2 my-[4%]">
         <p className="text-2xl md:text-3xl xl:text-4xl font-medium">
           How it works
@@ -45,8 +45,8 @@ const Method = () => {
         }`}
         ref={ref}
       >
-        <div className="flex flex-col md:flex-row w-full lg:w-2/3 text-3xl md:text-2xl lg:text-3xl gap-y-8 md:gap-y-0 gap-x-[2%] lg:gap-x-[8%] px-8 md:px-4 lg:px-0 justify-center items-center">
-          <div className="flex flex-col h-full w-full lg:w-1/3 aspect-square bg-primary text-center text-background justify-center rounded-[24px] px-1 lg:px-2 mx-auto self-center">
+        <div className="flex flex-col md:flex-row w-full lg:w-4/5 text-3xl md:text-2xl lg:text-3xl gap-y-8 md:gap-y-0 gap-x-[2%] lg:gap-x-[8%] px-8 md:px-4 lg:px-0 justify-center items-center">
+          <div className="flex flex-col h-full w-full lg:w-1/3 aspect-square bg-primary text-center text-background justify-center rounded-[24px] px-1 lg:px-4 mx-auto self-center">
             <MessagesSquare className="h-36 w-auto" />
             <div>
               <p>Request A Free Quote</p>
