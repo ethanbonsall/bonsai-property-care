@@ -89,7 +89,7 @@ const Quote = () => {
               name="Name"
               autoComplete="name"
               placeholder="John Smith"
-              className="text-text border rounded p-2 w-80"
+              className="text-text border rounded p-2 w-80 bg-background shadow"
               onInput={(e) => setName((e.target as HTMLInputElement).value)}
             />
           </div>
@@ -98,7 +98,7 @@ const Quote = () => {
               Number
             </p>
             <input
-              className="text-text border rounded p-2 w-80"
+              className="text-text border rounded p-2 w-80 bg-background shadow"
               inputMode="numeric"
               pattern="[0-9]*"
               name="number"
@@ -113,7 +113,7 @@ const Quote = () => {
               Email
             </p>
             <input
-              className="text-text border rounded p-2 w-80"
+              className="text-text border rounded p-2 w-80 bg-background shadow"
               inputMode="text"
               name="email"
               autoComplete="email"
@@ -130,7 +130,7 @@ const Quote = () => {
               name="address"
               autoComplete="street-address"
               placeholder="123 Main St"
-              className="text-text border rounded p-2 w-80"
+              className="text-text border rounded p-2 w-80 bg-background shadow"
               onInput={(e) => setAddress((e.target as HTMLInputElement).value)}
             ></input>
           </div>
@@ -143,7 +143,7 @@ const Quote = () => {
               name="city"
               autoComplete="address-level2"
               placeholder="Camp Hill"
-              className="text-text border rounded p-2 w-80"
+              className="text-text border rounded p-2 w-80 bg-background shadow"
               onInput={(e) => setCity((e.target as HTMLInputElement).value)}
             ></input>
           </div>
@@ -160,12 +160,15 @@ const Quote = () => {
             </div>
           </div>
         </div>
-        <Calendar
-          mode="single"
-          selected={date}
-          onSelect={setDate}
-          className="border text-text h-fit m-8 rounded [&_.rdp-day]:h-12 [&_.rdp-day]:w-12 [&_.rdp-day]:text-3xl [&_.rdp-caption_label]:text-2xl"
-        />
+        <div className="flex flex-col m-8">
+          <p className="mb-2 text-3xl font-bold">Date</p>
+          <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="border text-text h-fit rounded [&_.rdp-day]:h-12 [&_.rdp-day]:w-12 [&_.rdp-day]:text-3xl [&_.rdp-caption_label]:text-2xl"
+          />
+        </div>
       </div>
       <div className=" flex flex-col m-4 h-fit">
         <p
@@ -175,7 +178,7 @@ const Quote = () => {
           Message
         </p>
         <textarea
-          className="w-full text-text border rounded p-2"
+          className="w-full text-text border rounded p-2 bg-background"
           onInput={(e) => setMessage((e.target as HTMLInputElement).value)}
         ></textarea>
         <button

@@ -7,6 +7,7 @@ import Services from "@/components/services";
 import Method from "@/components/method";
 import Testimonial from "@/components/testimonials";
 import Quote from "@/components/quote";
+import Contact from "@/components/contact";
 
 const Portfolio = () => {
   return (
@@ -25,6 +26,7 @@ const Portfolio = () => {
       <Method />
       <Testimonial />
       <Quote />
+      <Contact />
       <BottomBar />
     </div>
   );

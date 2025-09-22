@@ -72,7 +72,7 @@ const Testimonial = () => {
 
   function ReviewCard({ review }: { review: Review }) {
     return (
-      <div className="bg-background text-text m-4 p-4 rounded-[24px] shadow-md w-[300px] h-[300px] flex flex-col justify-between gap-y-8">
+      <div className="bg-background text-text m-4 p-4 rounded-[24px] shadow-md w-[300px] h-[300px] 2xl:w-[500px] 2xl:h-[500px] flex flex-col justify-between 2xl:justify-center gap-y-8">
         <div className="flex flex-row justify-center">
           {Array.from({ length: 5 }).map((_, i) => (
             <Star
@@ -82,10 +82,10 @@ const Testimonial = () => {
           ))}
         </div>
         <div>
-          <p className="text-center text-2xl italic text-wrap">
+          <p className="text-center text-2xl 2xl:text-5xl italic text-wrap">
             &quot;{review.content}&quot;
           </p>
-          <p className="text-center mt-2 text-lg font-semibold">
+          <p className="text-center mt-2 text-lg 2xl:text-2xl font-semibold">
             - {review.author}
           </p>
         </div>
