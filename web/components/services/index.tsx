@@ -69,7 +69,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="transition-all duration-300 hover:scale-105 w-[400px] md:w-[500px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] lg:mx-[5dvw] my-[2dvh] xl:my-[1dvh] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="transition-all duration-300 hover:scale-105 w-full md:w-[500px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] lg:mx-[5dvw] my-[2dvh] xl:my-[1dvh] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px]">
                 <img
@@ -102,7 +102,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="transition-all duration-300 hover:scale-105 w-[400px] md:w-[500px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] lg:mx-[5dvw] my-[2dvh] xl:my-[1dvh] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="transition-all duration-300 hover:scale-105 w-full md:w-[500px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] lg:mx-[5dvw] my-[2dvh] xl:my-[1dvh] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px]">
                 <img
