@@ -29,7 +29,7 @@ export default function CategoryComboBox({
 
   return (
     <div className="relative w-full">
-      <div className="flex items-center border border-gray-300 rounded shadow-sm focus-within:ring-2 focus-within:ring-primary bg-white hover:bg-gray-100 text-text px-3 py-2">
+      <div className="flex items-center border rounded shadow-sm focus-within:ring-2 focus-within:ring-primary bg-background hover:bg-background-100 text-text px-3 py-2">
         <input
           type="text"
           value={query}
@@ -47,20 +47,20 @@ export default function CategoryComboBox({
           tabIndex={-1}
         >
           {isOpen ? (
-            <ChevronUp className="w-5 h-5 text-gray-500" />
+            <ChevronUp className="w-5 h-5 text-text" />
           ) : (
-            <ChevronDown className="w-5 h-5 text-gray-500" />
+            <ChevronDown className="w-5 h-5 text-text" />
           )}
         </button>
       </div>
 
       {isOpen && (
-        <ul className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded shadow max-h-60 overflow-auto">
+        <ul className="absolute z-10 w-full mt-1 bg-background border rounded shadow max-h-60 overflow-auto">
           {categories.map((option, idx) => (
             <li
               key={idx}
               onMouseDown={() => handleSelect(option)}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              className="px-4 py-2 hover:bg-background-100 cursor-pointer"
             >
               {option}
             </li>
@@ -68,7 +68,7 @@ export default function CategoryComboBox({
           {query && !hasExactMatch && (
             <li
               onMouseDown={() => handleSelect(query)}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer border-t border-gray-200"
+              className="px-4 py-2 hover:bg-background-100 cursor-pointer border-t"
             >
               Other: <strong>{query}</strong>
             </li>
