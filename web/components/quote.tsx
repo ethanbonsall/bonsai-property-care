@@ -37,7 +37,7 @@ const Quote = () => {
   const handleSend = async () => {
     const Address = address + ", " + City;
     if (!name || !Number || !Email || !date || !Address || !Message) {
-      alert("Please fill in your name and email.");
+      alert("Please fill in all parts of the form.");
       return;
     }
 
