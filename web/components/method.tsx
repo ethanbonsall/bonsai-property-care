@@ -45,7 +45,7 @@ const Method = () => {
         }`}
         ref={ref}
       >
-        <div className="flex flex-col md:flex-row w-full lg:w-4/5 text-3xl md:text-2xl lg:text-3xl gap-y-8 md:gap-y-0 gap-x-[2%] lg:gap-x-[8%] px-8 md:px-4 lg:px-0 justify-center items-center">
+        <div className="flex flex-col md:flex-row w-full text-3xl md:text-2xl lg:text-3xl gap-y-8 md:gap-y-0 gap-x-[2%] lg:gap-x-[8%] px-8 md:px-4 lg:px-[10dvw] justify-center items-center">
           <div className="flex flex-col h-full w-full lg:w-1/3 aspect-square bg-primary text-center text-background justify-center rounded-[24px] px-1 lg:px-4 mx-auto self-center">
             <MessagesSquare className="h-36 w-auto" />
             <div>

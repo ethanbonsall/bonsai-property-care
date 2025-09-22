@@ -69,7 +69,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="transition-all duration-300 hover:scale-105 max-w-full lg:max-w-[1/2] xl:w-2/5 2xl:w-1/3 mx-2 lg:mx-[5%] my-[2%] xl:my-[1%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="transition-all duration-300 hover:scale-105 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] lg:mx-[5dvw] my-[2dvh] xl:my-[1dvh] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px]">
                 <img
@@ -102,7 +102,7 @@ const Services = () => {
             <Link
               key={service.href}
               href={service.href}
-              className="transition-all duration-300 hover:scale-105 max-w-full lg:max-w-[1/2] xl:w-2/5 2xl:w-1/3 mx-2 lg:mx-[5%] my-[2%] xl:my-[1%] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
+              className="transition-all duration-300 hover:scale-105 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] lg:mx-[5dvw] my-[2dvh] xl:my-[1dvh] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-[35px] bg-accent"
             >
               <div className="flex flex-col w-full rounded-[35px]">
                 <img
