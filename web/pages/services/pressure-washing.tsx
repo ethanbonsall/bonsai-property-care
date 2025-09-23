@@ -1,3 +1,5 @@
+import BottomBar from "@/components/bottom_bar";
+import Display from "@/components/display";
 import NavBar from "@/components/nav_bar";
 import Head from "next/head";
 
@@ -8,6 +10,8 @@ const Washing = () => {
         <title>Pressure Washing</title>
       </Head>
       <NavBar />
+      <Display />
+      <BottomBar />
     </div>
   );
 };

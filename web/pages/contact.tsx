@@ -1,3 +1,4 @@
+import BottomBar from "@/components/bottom_bar";
 import NavBar from "@/components/nav_bar";
 import Head from "next/head";
 
@@ -8,6 +9,8 @@ const Contact = () => {
         <title>Contact</title>
       </Head>
       <NavBar />
+      <Contact />
+      <BottomBar />
     </div>
   );
 };

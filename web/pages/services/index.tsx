@@ -1,3 +1,5 @@
+import BottomBar from "@/components/bottom_bar";
+import Display from "@/components/display";
 import NavBar from "@/components/nav_bar";
 import Head from "next/head";
 
@@ -8,6 +10,9 @@ const Services = () => {
         <title>Services</title>
       </Head>
       <NavBar />
+      <Services />
+      <Display />
+      <BottomBar />
     </div>
   );
 };

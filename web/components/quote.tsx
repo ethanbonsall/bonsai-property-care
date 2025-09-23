@@ -72,14 +72,14 @@ const Quote = () => {
 
   return (
     <div
-      className="flex flex-col bg-gradient-to-bl from-accent-400 to-accent-700 text-background h-fit w-full p-8"
+      className="flex flex-col bg-gradient-to-bl from-accent-400 to-accent-700 text-background h-fit w-full px-0 lg:px-[15dvw] xl:px-[25dvw] p-8 "
       id="quote"
     >
       <div className="h-fit text-background text-center">
         <p className="text-6xl font-bold"> Ready To Transform Your Home?</p>
       </div>
-      <div className="flex flex-col md:flex-row gap-x-16 justify-between items-center">
-        <div className="flex flex-col p-4 gap-y-4 text-background font-semibold">
+      <div className="flex flex-col md:flex-row gap-x-16 lg:gap-x-0 justify-between items-center">
+        <div className="flex flex-col p-4 lg:p-0 lg:py-4 gap-y-4 text-background font-semibold">
           <div>
             <p className="text-3xl xl:text-4xl mb-2" aria-label="name">
               Name
@@ -160,7 +160,7 @@ const Quote = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col m-8">
+        <div className="flex flex-col m-8 lg:m-0">
           <p className="mb-2 text-3xl font-bold">Date</p>
           <Calendar
             mode="single"
@@ -170,7 +170,7 @@ const Quote = () => {
           />
         </div>
       </div>
-      <div className=" flex flex-col m-4 h-fit">
+      <div className=" flex flex-col m-4 lg:m-0 h-fit">
         <p
           className="text-3xl xl:text-4xl mb-2 w-full font-semibold"
           aria-label="Message"
