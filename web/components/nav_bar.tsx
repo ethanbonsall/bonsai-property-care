@@ -31,10 +31,16 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="fixed top-6 w-full h-0 text-text-700 z-40 flex md:hidden p-2 items-center justify-end ">
+      <div className="fixed w-full h-fit text-text-700 z-40 flex bg-background md:hidden p-2 items-center justify-between ">
+        <img
+          src={Logo.src}
+          alt="Logo"
+          className=" w-12 h-12 rounded-full"
+          onClick={() => toggleTheme.toggleTheme()}
+        />
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="flex items-center gap-2 text-white"
+          className="flex items-center gap-2 text-text"
         >
           <Menu className="w-12 h-12" />
         </button>
@@ -46,7 +52,7 @@ const NavBar = () => {
       >
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="absolute top-6 right-8 z-50"
+          className="absolute top-6 right-8 z-50 "
         >
           <X className="w-8 h-8 2xl:w-10 2xl:h-10" />
         </button>
@@ -66,7 +72,7 @@ const NavBar = () => {
               className="flex flex-row items-center cursor-pointer"
               onClick={() => setServicesOpen(!servicesOpen)}
             >
-              Services{" "}
+              Services
               <ChevronDown
                 className={`w-6 h-6 ml-2 transition-transform duration-300 ${
                   servicesOpen ? "rotate-180" : "rotate-0"
