@@ -10,7 +10,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      author: "Jane",
+      author: "Paula",
       content:
         "The team cleaned all our windows inside and out — the house feels so much brighter now.",
     },
@@ -22,13 +22,13 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      author: "Alice",
+      author: "Rachel",
       content:
         "Our lawn was patchy before, but after their care it’s lush and green. Super impressed.",
     },
     {
       id: 5,
-      author: "Bob",
+      author: "Megan",
       content:
         "Very professional crew. They showed up on time and sealed the driveway perfectly.",
     },
@@ -40,7 +40,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      author: "Jane",
+      author: "Paula",
       content:
         "The team cleaned all our windows inside and out — the house feels so much brighter now.",
     },
@@ -52,13 +52,13 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      author: "Alice",
+      author: "Rachel",
       content:
         "Our lawn was patchy before, but after their care it’s lush and green. Super impressed.",
     },
     {
       id: 5,
-      author: "Bob",
+      author: "Megan",
       content:
         "Very professional crew. They showed up on time and sealed the driveway perfectly.",
     },

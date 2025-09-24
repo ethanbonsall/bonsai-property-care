@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ChevronRight } from "lucide-react";
-import Caleb from "@/public/assets/stock-about.jpg";
-import Work from "@/public/assets/stock-work.jpg";
+import Caleb from "@/public/assets/siding-1.jpg";
+import Work from "@/public/assets/Vinyl_siding.jpg";
 import { useEffect, useState, useRef } from "react";
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {

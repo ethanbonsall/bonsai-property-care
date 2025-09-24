@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ChevronRight } from "lucide-react";
-import Caleb from "@/public/assets/stock-about.jpg";
-import Work from "@/public/assets/stock-work.jpg";
+import Caleb from "@/public/assets/landscaping-1.jpg";
+import Work from "@/public/assets/landscaping-2.jpeg";
 import { useEffect, useState, useRef } from "react";
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
@@ -76,7 +76,7 @@ const Landscaping = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         >
-          <li>Creative Designs</li>
+          <li>Scheduled Mowing</li>
           <li>Expert Maintenance</li>
           <li>Sustainable Practices</li>
           <li>Beautiful Results</li>

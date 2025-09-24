@@ -4,6 +4,7 @@ import NavBar from "@/components/nav_bar_home";
 import Reviews from "@/components/testimonials";
 import PowerWashing from "@/components/services/power_washing";
 import Head from "next/head";
+import Quote from "@/components/quote";
 
 const Washing = () => {
   return (
@@ -15,6 +16,7 @@ const Washing = () => {
       <PowerWashing />
       <Reviews />
       <Display />
+      <Quote />
       <BottomBar />
     </div>
   );

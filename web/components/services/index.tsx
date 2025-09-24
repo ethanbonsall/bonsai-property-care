@@ -3,7 +3,7 @@ import Link from "next/link";
 import driveway from "../../public/assets/driveway-sealing.jpg";
 import landscape from "../../public/assets/landscape.jpg";
 import pressure from "../../public/assets/power-washing.jpg";
-import general from "../../public/assets/home-care.jpg";
+import general from "../../public/assets/siding.jpg";
 import { useEffect, useState, useRef } from "react";
 
 const Services = () => {
@@ -26,9 +26,7 @@ const Services = () => {
   return (
     <div className="flex flex-col bg-gradient-to-tr from-secondary-200 to-secondary-600 text-text h-fit w-full translate-all py-[1%]">
       <div
-        className={`flex flex-col h-fit transition-all duration-700 mx-[5%] mt-[2%] mb-[1%] ${
-          isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-4"
-        }`}
+        className="flex flex-col h-fit transition-all duration-700 mx-[5%] mt-[2%] mb-[1%]"
         ref={ref}
       >
         <p className="text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-medium text-primary-800">

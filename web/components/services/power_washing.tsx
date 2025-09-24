@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ChevronRight } from "lucide-react";
-import Caleb from "@/public/assets/stock-about.jpg";
-import Work from "@/public/assets/stock-work.jpg";
+import Caleb from "@/public/assets/power-washing-1.jpg";
+import Work from "@/public/assets/power-washing-2.jpg";
 import { useEffect, useState, useRef } from "react";
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
@@ -59,7 +59,7 @@ const PowerWashing = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         >
-          Power Washing
+          Pressure Washing
         </p>
         <p
           className={`text-xl xl:text-2xl 2xl:text-4xl my-4 max-w-2xl 2xl:max-w-4xl transition-all duration-700 ease-out ${

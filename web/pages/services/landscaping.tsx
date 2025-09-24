@@ -4,6 +4,7 @@ import NavBar from "@/components/nav_bar_home";
 import Reviews from "@/components/testimonials";
 import Landscaping_Component from "@/components/services/landscaping";
 import Head from "next/head";
+import Quote from "@/components/quote";
 
 const Landscaping = () => {
   return (
@@ -15,6 +16,7 @@ const Landscaping = () => {
       <Landscaping_Component />
       <Reviews />
       <Display />
+      <Quote />
       <BottomBar />
     </div>
   );

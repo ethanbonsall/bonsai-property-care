@@ -6,7 +6,12 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "@/context/themecontext";
 
-const services = ["Pressure Washing", "Driveway Sealing", "Landscaping"];
+const services = [
+  "Pressure Washing",
+  "Driveway Sealing",
+  "Landscaping",
+  "General Home Care",
+];
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
