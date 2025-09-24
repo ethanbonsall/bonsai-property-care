@@ -11,7 +11,7 @@ import Contact from "@/components/contact";
 
 const Portfolio = () => {
   return (
-    <div className="bg-background flex flex-col items-center text-text font-roboto gap-y-2">
+    <div className="bg-background flex flex-col items-center text-text font-roboto">
       <Head>
         <title>Bonsai Property Care</title>
         <meta
@@ -21,12 +21,25 @@ const Portfolio = () => {
       </Head>
       <NavBar />
       <Hero />
+      <div className="mb-2"></div>
       <About />
+
+      <div className="mb-2"></div>
       <Services />
+
+      <div className="mb-2"></div>
       <Method />
+
+      <div className="mb-2"></div>
       <Testimonial />
+
+      <div className="mb-2"></div>
       <Quote />
+
+      <div className="mb-2"></div>
       <Contact />
+
+      <div className="mb-2"></div>
       <BottomBar />
     </div>
   );

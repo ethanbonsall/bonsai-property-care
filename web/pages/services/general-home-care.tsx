@@ -1,19 +1,21 @@
 import BottomBar from "@/components/bottom_bar";
 import Display from "@/components/display";
-import NavBar from "@/components/nav_bar";
+import NavBar from "@/components/nav_bar_home";
+import HomeCareComponents from "@/components/services/home_care";
 import Head from "next/head";
 
-const Siding = () => {
+const HomeCare = () => {
   return (
-    <div className="bg-background flex flex-col items-center text-text font-roboto">
+    <div className="bg-accent flex flex-col items-center text-text font-roboto">
       <Head>
-        <title>Siding</title>
+        <title>Home Projects</title>
       </Head>
       <NavBar />
+      <HomeCareComponents />
       <Display />
       <BottomBar />
     </div>
   );
 };
 
-export default Siding;
+export default HomeCare;

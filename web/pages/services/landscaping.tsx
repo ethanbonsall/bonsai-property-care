@@ -1,6 +1,8 @@
 import BottomBar from "@/components/bottom_bar";
 import Display from "@/components/display";
-import NavBar from "@/components/nav_bar";
+import NavBar from "@/components/nav_bar_home";
+import Reviews from "@/components/testimonials";
+import Landscaping_Component from "@/components/services/landscaping";
 import Head from "next/head";
 
 const Landscaping = () => {
@@ -10,6 +12,8 @@ const Landscaping = () => {
         <title>Landscaping</title>
       </Head>
       <NavBar />
+      <Landscaping_Component />
+      <Reviews />
       <Display />
       <BottomBar />
     </div>

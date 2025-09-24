@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import NavBar from "@/components/nav_bar";
+import NavBar from "@/components/nav_bar_home";
 import { ChevronRight } from "lucide-react";
 
 const four04 = () => {

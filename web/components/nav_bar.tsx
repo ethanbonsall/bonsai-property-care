@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="fixed w-full h-fit text-text-700 z-40 flex bg-background md:hidden p-2 items-center justify-between ">
+      <div className="sticky top-0 w-full h-fit text-text-700 flex bg-background md:hidden p-2 z-50 items-center justify-between ">
         <img
           src={Logo.src}
           alt="Logo"
@@ -108,7 +108,7 @@ const NavBar = () => {
           marginRight: `${padding}px`,
           width: `calc(100% - ${padding * 2}px)`,
         }}
-        className={`hidden md:flex flex-row fixed top-0 z-50 shadow 
+        className={`hidden md:flex flex-row fixed top-0 right-0 z-50 shadow  
         bg-primary text-text-50 px-6 py-2 justify-between items-center
         transition-[max-height,padding,transform]`}
       >

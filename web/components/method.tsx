@@ -76,7 +76,10 @@ const Method = () => {
           </div>
         </div>
         <div className="flex w-full justify-center">
-          <button className=" flex flex-row items-center bg-primary text-background text-2xl font-semibold rounded-[16px] px-8 py-4 mb-[5%] mt-[5%] hover:bg-secondary hover:text-background transition duration-300">
+          <button
+            className=" flex flex-row items-center bg-primary text-background text-2xl font-semibold rounded-[16px] px-8 py-4 mb-[5%] mt-[5%] hover:bg-secondary hover:text-background transition duration-300"
+            onClick={() => (window.location.href = "/contact")}
+          >
             Get A Quote <ChevronRight className="w-7 h-auto" />
           </button>
         </div>

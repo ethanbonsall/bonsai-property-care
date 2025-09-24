@@ -3,9 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const mediaItems = [
-  { type: "image", src: "/assets/driveway-sealing.jpg", duration: 5000 },
-  { type: "video", src: "/assets/stock-video.mp4" },
-  { type: "image", src: "/assets/stock-work.jpg", duration: 7000 },
+  { type: "image", src: "/assets/cleaning1.jpeg", duration: 5000 },
+  { type: "video", src: "/assets/cleaning2.mov" },
+  { type: "image", src: "/assets/cleaning3.jpeg", duration: 5000 },
+  { type: "image", src: "/assets/cleaning4.jpeg", duration: 5000 },
+  { type: "image", src: "/assets/cleaning5.jpeg", duration: 5000 },
 ];
 
 const Display = () => {
