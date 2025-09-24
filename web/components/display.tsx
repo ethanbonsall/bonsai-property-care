@@ -8,6 +8,8 @@ const mediaItems = [
   { type: "image", src: "/assets/cleaning3.jpeg", duration: 5000 },
   { type: "image", src: "/assets/cleaning4.jpeg", duration: 5000 },
   { type: "image", src: "/assets/cleaning5.jpeg", duration: 5000 },
+  { type: "image", src: "/assets/cleaning6.jpeg", duration: 5000 },
+  { type: "image", src: "/assets/cleaning7.jpeg", duration: 5000 },
 ];
 
 const Display = () => {
