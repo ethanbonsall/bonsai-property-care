@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import { ChevronRight } from "lucide-react";
 import Caleb from "../public/assets/stock-about.jpg";
@@ -80,14 +81,14 @@ const About = () => {
           <li>Customer Satisfaction</li>
           <li>Quality Workmanship</li>
         </div>
-        <button
-          className={`flex flex-row self-end bg-secondary-800 rounded-[12px] text-text-50 mt-8 2xl:mt-24 px-6 py-3 text-xl xl:text-2xl 2xl:text-5xl font-semibold w-fit hover:bg-secondary-700 mb-8 lg:mb-0 transition-all duration-700 ease-out ${
+        <a
+          className={`flex flex-row self-end bg-secondary-800 rounded-[12px] text-text-50 mt-8 2xl:mt-24 px-6 py-3 text-xl xl:text-2xl 2xl:text-5xl font-bold uppercase w-fit hover:bg-secondary-700 mb-8 lg:mb-0 transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
-          onClick={() => (window.location.href = "/about")}
+          href="/about"
         >
           Learn More <ChevronRight className="h-8 xl:h-9 2xl:h-14 w-auto" />
-        </button>
+        </a>
       </div>
     </div>
   );
