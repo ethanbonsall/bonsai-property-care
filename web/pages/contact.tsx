@@ -12,7 +12,7 @@ const Contact = () => {
       </Head>
       <NavBar />
       <Quote />
-      <div className="py-2 px-[100dvw] bg-background" />
+      <div className="py-2 px-[50dvw] bg-background" />
       <Contact_Section />
       <BottomBar />
     </div>
