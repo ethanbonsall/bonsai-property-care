@@ -55,8 +55,8 @@ const HomeCare = () => {
       </div>
 
       <div className="flex flex-col justify-center mx-[2%] mt-[4%] lg:mt-0 2xl:gap-y-8">
-        <p
-          className={`font-bold text-6xl xl:text-[80px] 2xl:text-[150px] transition-all duration-700 ease-out ${
+      <p
+          className={`font-bold text-6xl 2xl:text-[80px] transition-all duration-700 ease-out md:text-nowrap ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           } `}
         >
